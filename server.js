@@ -4,13 +4,13 @@ const fs = require('fs')
 const path = require('path')
 const app = express()
 
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'))
-})
+// app.get('/', function(req, res) {
+//   res.sendFile(path.join(__dirname + '/index.html'))
+// })
  
 const config = {
   rtmp: {
-    port: 1935,
+    port: 3000,
     chunk_size: 60000,
     gop_cache: true,
     ping: 30,
@@ -25,6 +25,6 @@ const config = {
 var nms = new NodeMediaServer(config)
 nms.run();
 
-app.listen(3000, function () {
-  console.log('Listening on port 3000!')
-})
+// app.listen(3000, function () {
+//   console.log('Listening on port 3000!')
+// })
