@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "node-media-server": "^2.2.4"
+    "node-media-server": "^2.2.4",
+    "rtmp-server": "^0.2.0"
   }
 }
