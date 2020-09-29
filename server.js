@@ -27,4 +27,6 @@ rtmpServer.on('client', client => {
   });
 });
  
-rtmpServer.listen(3000);
+rtmpServer.listen(process.env.PORT || 3000, () => {
+  console.log(`Listening at http://localhost:${process.env.PORT || 3000}/`);
+});
